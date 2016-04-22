@@ -1,0 +1,9 @@
+<h1>Roster</h1>
+
+<% @players.each do |player| %>
+  <div>
+    <%= player.name %>
+    * Number: <%= player.number %>
+    * Average: <%= player.average / 1000 %>
+  </div>
+<% end %>
