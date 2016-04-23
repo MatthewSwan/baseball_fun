@@ -4,3 +4,7 @@
 <p> Number: <%= @player.number %></p>
 <p> Average: <%= @player.average / 1000 %></p>
 
+<%= link_to "Edit Player", edit_player_path(@player) %>
+<br>
+<%= link_to "Delete Player", player_path(@player), method: :delete %>
+
